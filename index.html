@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Weather</title>
     
-   
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -25,10 +23,16 @@
                     <option>°C</option>
                     <option>°F</option>
                 </select>
-
                 <i class="fa fa-search" onclick="searchForLocation()" role="button" aria-label="Search"></i>
 
             </div>
+            <div>
+            <label for="theme-toggle">Theme:</label>
+            <select id="theme-selector">
+                <option value="light">☀️</option>
+                <option value="dark">🌙</option>
+              </select>
+             </div>
             <p id="error-message" ></p>
             <div class="weathericon"></div>
             <h2 class="temperature"></h2>
@@ -41,7 +45,7 @@
             <div class="region"></div>
 
             <div class="footer-message">
-                <p>© Developed by Aman Show</p>
+                <p>© 2025 Aman Show. All Rights Reserved.</p>
                 <p>API source: <a href="https://www.weatherapi.com/" target="_blank" rel="noopener noreferrer">WeatherAPI.com</a></p>
             </div>
             

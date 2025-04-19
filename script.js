@@ -280,3 +280,16 @@ const getSevenDaysForecast = async (targetLocation) => {
 
 // Add event listener for the search icon or button
 document.querySelector(".fa-search").addEventListener("click", searchForLocation);
+
+/* this one is for dark */
+const themeSelector = document.getElementById("theme-selector");
+
+themeSelector.addEventListener("change", () => {
+  const theme = themeSelector.value;
+
+  if (theme === "dark") {
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
+  }
+});

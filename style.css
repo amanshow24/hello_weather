@@ -73,7 +73,7 @@ body {
   background-color: #f0f0f0;
 }
 
-.converter {
+/*.converter {
   position: absolute;
   right: 2.5rem;
   top: 50%;
@@ -93,7 +93,43 @@ body {
   color: #888;
   cursor: pointer;
   font-size: 1.2rem;
+}                           this two are before dark mode  */
+
+.converter {
+  position: absolute;
+  right: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  outline: none;
+  padding: 0;
+  height: auto;
+  line-height: 1;
 }
+
+.fa-search {
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+
+.theme-dropdown {
+  margin-top: 1rem; 
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+} /* this one also for dark mode*/
+
 
 #error-message {
   color: #d9534f;
@@ -147,8 +183,6 @@ hr {
   border-top: 1px solid #e6e6e6;
 }
 
-
-
 /* Right Panel */
 .weather-output {
   flex: 1;
@@ -167,7 +201,6 @@ hr {
   border-bottom: 1px solid #e3e3e3;
   padding-bottom: 0.4rem;
 }
-
 
 /* Highlights Grid */
 .highlights {
@@ -269,7 +302,75 @@ hr {
   margin: 0.2rem 0;
 }
 
+/* All the code from here are for dark mode */
+body.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
 
+.dark-theme .container {
+  background-color: #1e1e1e;
+}
 
+.dark-theme .weather-input,
+.dark-theme .weather-output {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
 
+.dark-theme .forecast-day,
+.dark-theme .highlights > div {
+  background-color: #2e2e2e;
+  border: 1px solid #444;
+}
+
+.dark-theme select,
+.dark-theme input {
+  background-color: #333;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+.dark-theme .footer-message {
+  color: #aaa;
+}
+
+.dark-theme .heading,
+.dark-theme .highlight-heading,
+.dark-theme .forecast-heading {
+  color: #ffffff;
+}
+
+.dark-theme .feelslike,
+.dark-theme .description,
+.dark-theme .date,
+.dark-theme .day,
+.dark-theme .city,
+.dark-theme .region {
+  color: #ffffff;
+}
+
+.dark-theme .suggestions-list {
+  background-color: #2a2a2a;
+  border-color: #555;
+}
+
+.dark-theme .suggestions-list li {
+  color: #fff;
+  border-bottom: 1px solid #444;
+}
+
+.dark-theme .suggestions-list li:hover {
+  background-color: #444;
+}
+
+.dark-theme .highlight-value,
+.dark-theme .highlights h1,
+.dark-theme #Hvalue,
+.dark-theme #Wvalue,
+.dark-theme #Cvalue,
+.dark-theme #UVvalue,
+.dark-theme #Pvalue {
+  color: #ffffff;
+}
 
